@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+
+</head>
+<body class="text-bg-dark">
+  <header>
+    <nav class="nav nav-masthead justify-content-center bg-opacity-0 pt-4">
+      <a class="link-light nav-link" href="index.html">Home</a>
+      <a class="link-light nav-link" href="about.html">About me</a>
+      <a class="link-light nav-link active" href="">My portfolio</a>
+      <a class="link-light nav-link" href="contacts.html">Contacts</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-5">
+        <div class="row row-cols-auto align-content-center justify-content-center">
+            <div class="col m-3 card" style="width: 18rem;">
+                <img class="card-img-top" src="tetris.png">
+                <div class="card-body">
+                <h5 class="card-title">Pygame tetris</h5>
+                <p class="card-text">Simple tetris written in python with pygame module.</p>
+                <a href="https://github.com/SherlockH0/PyTetris" class="btn btn-primary">Git Hub</a>
+                </div>
+            </div>
+            <div class="col m-3 card" style="width: 18rem;">
+                <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">CS50 Problem Sets</h5>
+                <p class="card-text">Problem sets and labs from CS50.</p>
+                <a href="https://github.com/SherlockH0/cs50" class="btn btn-primary">Git Hub</a>
+                </div>
+            </div>
+            <div class="col m-3 card" style="width: 18rem;">
+                <img class="card-img-top" src="slime.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Taichi Slime simulation</h5>
+                <p class="card-text">Python slime simulation. I used taichi to be able simulate as many agent at the same time.</p>
+                <a href="https://github.com/SherlockH0/Slime" class="btn btn-primary">Git Hub</a>
+                </div>
+            </div>
+            <div class="col m-3 card" style="width: 18rem;">
+                <img class="card-img-top" src="blog.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">django Blog</h5>
+                <p class="card-text">Simple django blog application made with <a href="https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p">this</a> tutorial.</p>
+                <a href="https://github.com/SherlockH0/django-blog" class="btn btn-primary">Git Hub</a>
+                </div>
+            </div>
+        </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

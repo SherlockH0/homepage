@@ -1,0 +1,96 @@
+@keyframes slideInFromLeft {
+    0% {
+        width: 0%;
+        opacity: 0%;
+    }
+    100% {
+        width: 100%;
+        opacity: 100%;
+    }
+}
+
+@keyframes start {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body {
+    animation: 3s ease-out 0s 1 start;
+    min-height: 100vh;
+    font-family: "Poiret One";
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    flex-grow: 1;
+}
+
+.my-10 {
+    margin: 10rem 0rem 10rem 0rem;
+}
+
+.nav-link {
+    text-align: center;
+    font-family: Poiret One;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    opacity: 0%;
+    transition: 0.75s;
+}
+
+.nav-link::before{
+    content: "";
+    height: 2px;
+    display: block;
+
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    opacity: 100%;
+}
+
+.nav-link.active::before {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    background: #fff;
+    width: 100%;
+    opacity: 100%;
+}
+
+.col {
+    transition: 2s;
+}
+.col:hover {
+    filter: drop-shadow(30px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.mail {
+    width: 40rem;
+}
+@media only screen and (max-width: 650px) {
+    .mail {
+        width: 100%;
+    }
+}
